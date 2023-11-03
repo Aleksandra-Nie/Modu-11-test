@@ -47,7 +47,7 @@ function App() {
   useEffect(() => {
     intervalId.current = setInterval(() => {
       setCount(count => count + 1);
-
+      clearInterval(intervalId.current);
     }, 1000);
   }, []);
 
