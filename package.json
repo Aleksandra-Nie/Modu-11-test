@@ -1,7 +1,8 @@
 {
-  "name": "modul",
+  "name": "modul-11",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aleksandra-nie.github.io/Modu-11-test/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
