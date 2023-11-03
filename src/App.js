@@ -30,7 +30,7 @@ const PrimaryButton = styled(Button)`
 border: 2px dotted blue;
 `;
 
-const P = styled.p`
+const Counter = styled.p`
 margin-left: 20px;
 color: blueviolet;
 font-weight: bold;
@@ -47,7 +47,7 @@ function App() {
   useEffect(() => {
     intervalId.current = setInterval(() => {
       setCount(count => count + 1);
-      clearInterval(intervalId.current);
+
     }, 1000);
   }, []);
 
@@ -60,9 +60,9 @@ function App() {
 
   return (
     <>
-      <P>{count}</P>
+      <Counter>{count}</Counter>
       <Button onClick={stopCounter}>Zatrzymaj licznik</Button>
-      <P> {counter} </P>
+      <Counter> {counter} </Counter>
       <Button primary onClick={() => setCounter(counter => counter + 1)}>Zwiększ licznik</Button>
       <p>
         <Button color="red">2 sposób na zapis styled components</Button>
